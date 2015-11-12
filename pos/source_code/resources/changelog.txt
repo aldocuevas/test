@@ -1,0 +1,36 @@
+version=1.1.4
+
+
+========== DEFECTOS CONOCIDOS ======
+VALE NO TOMADO EN CUENTA CUANDO EL ANTIGUO VALE FUE GENERADO EN OTRA SUCURSAL.E
+
+===========CHANGES IN 1.1.4============
+ENH-1.1.4.1 Modificacion de tallas y cantidades por defecto = 2.
+ENH-1.1.4.2 Reparacion de reporte "INGRESOS POR DIA" incluyendo una columna para el tipo de pago "Deposito".
+NOTA: Todos lo reportes siguen utilizando la version 3.1.2 de ireport, excepto tal vez los reportes de facturacion.
+
+
+===========CHANGES IN 1.1.0============
+ENH-1.1.1.1 CONFIGURACION EN BASE DE DATOS PARA LA ACTIVACION DE ABONOS Y PAGOS FINALES DE CREDITO CON TARJETAS DE CREDITO
+ENH-1.1.2.2 CONFIGURACION EN BASE DE DATOS PARA LA ACTIVACION DE DESCUENTOS POR PAGO ANTICIPADO DE MANERA GENERAL O UNICAMENTE PARA LAS VENTAS REALIZADAS
+DURANTE EL PERIODO DONDE LA PROMOCION SE APLICA.
+
+
+===========CHANGES IN 1.1.0============
+ENH-1.1.0.1 Encriptamiento de archivo ApplicationResources.properties
+ENH-1.1.0.2 Soporte Muilticaja.
+
+===========CHANGES IN 1.0.0============
+ENH-1.0.0.1 Agregar about.txt and changelog.txt
+ENH-1.0.0.2 Agregar permiso "Devoluciones ilimitadas" a usuarios.
+ENH-1.0.0.3 Separar permiso "Modificar productos y pagos" en dos permisos "Modificar Productos" y "Modificar Pagos"
+ENH-1.0.0.4 Agregar permiso "Exportar clientes". Mostrar boton "Exportar" en el formulario de clientes si el usuario tiene activado el permiso.
+
+
+========DEFECTS FIXED IN 1.0.0=========
+BUG-1.0.0.1 Menu Modificar Cantidad aparece en usuarios no autorizados al dar clic en boton intermedio del mouse
+ENH-1.1.0.3 Maximo de dias permitidos para realizar una devolucion (15)
+
+========DB CHANGES IN 1.0.0============
+R1.0.0.0->1.0.0.1-CREATE-TABLE-preferencias.sql
+R1.0.0.0->1.0.0.2-ALTER-TABLE-usuarios.sql

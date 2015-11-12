@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="reportes"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/apachecommon"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/barbecue"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/itext"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jasperreports"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jbcl"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jcalendar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql55"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/report"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/invoicing"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
