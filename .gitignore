@@ -10,6 +10,6 @@ pos/source_code/ApplicationResources.properties.localhost
 **/.DS_Store
 **/*.tlp
 **/source_code/scripts_db/**
-
+db_bkps/
 
 
