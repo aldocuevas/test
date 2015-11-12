@@ -1,0 +1,14 @@
+.metadata/
+**/bin/**
+**/*.jar
+**/executables/**
+**/lib/**
+**/lib_sources/**
+**/.settings/**
+**/ApplicationResources**.*
+**/.DS_Store
+**/*.tlp
+**/source_code/scripts_db/**
+
+
+
