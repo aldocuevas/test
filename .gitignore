@@ -5,8 +5,7 @@
 **/lib/**
 **/lib_sources/**
 **/.settings/**
-pos/source_code/ApplicationResources.properties
-pos/source_code/ApplicationResources.properties.localhost
+pos/source_code/ApplicationResources.properties.*
 **/.DS_Store
 **/*.tlp
 **/source_code/scripts_db/**
