@@ -36,6 +36,7 @@ public class DaoBoutique {
 				b.setIp(rs.getString("ip"));
 				b.setId(rs.getInt("id"));
 				b.setMatriz(rs.getInt("matriz"));
+				b.setTimezone(rs.getString("timeZone"));
 
 			}
 			rs.close();
@@ -50,6 +51,7 @@ public class DaoBoutique {
 				boutiqueLocal.setId(rs.getInt("id"));
 				boutiqueLocal.setMatriz(rs.getInt("matriz"));
 				boutiqueLocal.setLocal(rs.getString("local"));
+				boutiqueLocal.setTimezone(rs.getString("timeZone"));
 			}
 			// con.close();
 
@@ -338,6 +340,7 @@ public class DaoBoutique {
 				boutiqueLocal.setHFoto(rs.getInt("hFoto"));
 				boutiqueLocal.setWFoto(rs.getInt("wFoto"));
 				boutiqueLocal.setFondoFijoEnCaja(rs.getDouble("fondoFijoEnCaja"));
+				boutiqueLocal.setTimezone(rs.getString("timeZone"));
 			}
 			rs.close();
 

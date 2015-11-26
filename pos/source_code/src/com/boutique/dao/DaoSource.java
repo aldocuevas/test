@@ -35,8 +35,6 @@ public class DaoSource {
 
 	}
 
-	private static Connection con = null;
-
 	public static boolean guardarDatosBoutique(int idBoutique, int idTerminal) {
 		EncryptedProperties p = new EncryptedProperties();
 		p.setProperty(_IP, ip);
@@ -47,9 +45,9 @@ public class DaoSource {
 	
 		p.setProperty(_IDBOUTIQUE, String.valueOf(idBoutique));
 		p.setProperty(_IDTERMINAL, String.valueOf(idTerminal));
-
+	
 		try {
-
+	
 			p.store(new FileOutputStream("ApplicationResources.properties"),
 					null);
 			DaoSource.idBoutique = idBoutique;
@@ -65,8 +63,10 @@ public class DaoSource {
 			return false;
 		}
 		return true;
-
+	
 	}
+
+	private static Connection con = null;
 
 	public static boolean guardarDatosConexion() {
 		// Write properties file.
@@ -106,6 +106,12 @@ public class DaoSource {
 		} catch (SQLException ex) {
 			return null;
 		}
+	}
+	
+	public static void setTimeZone(String timeZone) throws SQLException {
+	
+		getConnection().prepareStatement("SET time_zone='" + timeZone + "';").execute();
+		
 	}
 
 	public static Connection getConnection() {

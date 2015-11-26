@@ -23,6 +23,8 @@ public class Boutique {
   private int hFoto;
   private boolean mostrarFoto=false;
   private double fondoFijoEnCaja;
+  private String timezone;
+  
   public Boutique() {
   }
 
@@ -208,5 +210,13 @@ public void setFondoFijoEnCaja(double fondoFijoEnCaja) {
 
 public double getFondoFijoEnCaja() {
 	return fondoFijoEnCaja;
+}
+
+public String getTimezone() {
+	return timezone;
+}
+
+public void setTimezone(String timezone) {
+	this.timezone = timezone;
 }
 }

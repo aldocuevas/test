@@ -3,6 +3,7 @@ package com.boutique.engine.impl;
 import com.boutique.domain.*;
 import com.boutique.dao.DaoBoutique;
 import java.util.*;
+import java.sql.SQLException;
 import java.text.NumberFormat;
 import com.boutique.dao.*;
 
@@ -159,6 +160,12 @@ public class AppInstance {
 				DaoSource.idBoutique = 1;
 			}
 			boutique = DaoBoutique.findById(DaoSource.idBoutique);
+			try {
+				DaoSource.setTimeZone(boutique.getTimezone());
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			personaMoral = DaoPersonalMoral.findPersonaMoral();
 			idToTipoNotaLeyenda = DaoLeyendas.findNotasLeyendas(boutique
 					.getId());
